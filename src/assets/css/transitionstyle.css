@@ -1,0 +1,13 @@
+@keyframes smile {
+    from{
+        color: transparent;
+    }
+    to{
+        color: #1DA57A;
+        transform: scaleX(1.2, 1.2);
+    }
+}
+
+.smile{
+    animation: smile 1s linear 0s infinite alternate both;
+}

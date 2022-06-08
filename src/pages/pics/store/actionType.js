@@ -1,0 +1,1 @@
+export const ADD_NEW_TYPE = 'ADD_NEW_TYPE';
