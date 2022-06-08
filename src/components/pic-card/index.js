@@ -6,7 +6,7 @@ const PicCard = memo((props) => {
 
     return (
         <PicCardWrapper>
-            <img src={info.url} />
+            <img src={info.url} alt='cover'/>
             <div className='type'>{info.type}</div>
             {info.type?<div className='line'></div>:null}
             <div className='desc'>{info.desc}</div>
