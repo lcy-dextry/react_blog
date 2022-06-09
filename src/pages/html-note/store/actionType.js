@@ -1,0 +1,1 @@
+export const CHANGE_HTML_NOTES = 'CHANGE_HTML_NOTES';

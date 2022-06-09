@@ -1,0 +1,1 @@
+export const CHANGE_ES_NOTES = 'CHANGE_ES_NOTES';

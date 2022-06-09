@@ -1,0 +1,1 @@
+export const CHANGE_REACT_NOTES = 'CHANGE_REACT_NOTES';

@@ -2,7 +2,7 @@
 export const headerLinks = [
     {title: '笔记', link: '/note'},
     {title: '图库', link: '/pic'},
-    {title: '留言', link: '/msg'},
+    {title: '说说', link: '/msg'},
     {title: '待办', link: '/memo'},
     {title: '关于', link: '/about'}
 ]

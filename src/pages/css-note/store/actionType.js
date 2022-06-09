@@ -1,0 +1,1 @@
+export const CHANGE_CSS_NOTES = 'CHANGE_CSS_NOTES';

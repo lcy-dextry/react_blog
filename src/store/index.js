@@ -1,7 +1,11 @@
-import { legacy_createStore as createStore} from 'redux';
+import { applyMiddleware, compose, legacy_createStore as createStore} from 'redux';
+import thunk from 'redux-thunk';
 
 // 自定义
 import reducer from './reducer';
 
-const store = createStore(reducer);
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ||compose;
+const store = createStore(reducer, composeEnhancers(
+    applyMiddleware(thunk)
+));
 export default store;
