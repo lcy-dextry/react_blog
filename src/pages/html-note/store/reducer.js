@@ -7,7 +7,7 @@ const defaultState = Map({
 
 function reducer(state = defaultState, action) {
     switch (action.type) {
-        case actionType.CHANGE_HTML_NOTES:
+        case actionType.GET_HTML_NOTES:
             return state.set('html', action.html);
         default:
             return state;

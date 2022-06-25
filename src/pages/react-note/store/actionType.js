@@ -1,1 +1,1 @@
-export const CHANGE_REACT_NOTES = 'CHANGE_REACT_NOTES';
+export const GET_REACT_NOTES = 'GET_REACT_NOTES';

@@ -1,20 +1,20 @@
 import * as actionType from './actionType';
 import { db,_ } from '@/utils/cloudBase';
 
-export const changeReactNotesAction = res => ({
-    type: actionType.CHANGE_REACT_NOTES,
+export const getReactNotes = res => ({
+    type: actionType.GET_REACT_NOTES,
     react: res.data
 })
 
 export const getReactNotesAction = () => {
     return dispatch => {
-        db.collection('articles')
+        db.collection('notes')
             .where({
-                type_id: _.eq("react")
+                type: _.eq("React")
             })
             .get()
             .then(res => {
-                dispatch(changeReactNotesAction(res))
+                dispatch(getReactNotes(res))
             })
     }
 }

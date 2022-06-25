@@ -4,6 +4,7 @@ import { Navigate, useRoutes } from 'react-router-dom';
 // 自定义组件/页面
 import Home from '@/pages/home';
 import Note from '@/pages/notes';
+import NoteDetail from '@/pages/note-detail';
 import Picture from '@/pages/pics';
 import Message from '@/pages/message';
 import Memo from '@/pages/memo';
@@ -24,6 +25,8 @@ export default function RoutesMap() {
     const routes = useRoutes([
         { path: '', element: <Navigate to='/home' /> },
         { path: '/home', element: <Home /> },
+        { path: '/detail', element: <NoteDetail /> },
+        { path: '/detail:id', element: <NoteDetail /> },
         {
             path: '/note', element: <Note />,
             children: [
@@ -37,7 +40,7 @@ export default function RoutesMap() {
         {
             path: '/pic', element: <Picture />,
             children: [
-                {path: '', element: <AllPicture />},
+                { path: '', element: <AllPicture /> },
                 { path: 'nature', element: <Nature /> },
                 { path: 'animal', element: <Animal /> },
                 { path: 'people', element: <People /> },

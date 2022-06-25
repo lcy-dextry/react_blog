@@ -1,1 +1,1 @@
-export const CHANGE_HTML_NOTES = 'CHANGE_HTML_NOTES';
+export const GET_HTML_NOTES = 'GET_HTML_NOTES';

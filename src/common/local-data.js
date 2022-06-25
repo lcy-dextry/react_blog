@@ -2,7 +2,7 @@
 export const headerLinks = [
     {title: '笔记', link: '/note'},
     {title: '图库', link: '/pic'},
-    {title: '说说', link: '/msg'},
+    {title: '日记本', link: '/msg'},
     {title: '待办', link: '/memo'},
     {title: '关于', link: '/about'}
 ]
@@ -19,7 +19,9 @@ export const noteLinks = [
 export const utilsList = [
     'React',
     'AntD',
-    'Redux'
+    'Redux',
+    'CloudBase',
+    'hooks'
 ]
 
 // 图库:动物图片
@@ -79,5 +81,5 @@ export const selfIntroduce = [
 export const contact = [
     {title: 'QQ', link: '812852904'},
     {title: '邮箱', link: 'l18711130734@163.com'},
-    {title: 'Github', link: 'https://github.com/Chunyue-lv'}
+    {title: 'Github', link: 'https://github.com/lcy-dextry'}
 ]

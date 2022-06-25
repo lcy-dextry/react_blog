@@ -7,7 +7,7 @@ const defaultState = Map({
 
 function reducer(state = defaultState, action) {
     switch (action.type) {
-        case actionType.CHANGE_NOTES:
+        case actionType.GET_NOTES:
             return state.set('notes', action.notes);
         default:
             return state;

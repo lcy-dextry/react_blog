@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const NoteWrapper = styled.div`
+    position: relative;
     display: flex;
     width: 880px;
     height: 60px;
@@ -25,6 +26,16 @@ export const NoteWrapper = styled.div`
 
     &:last-child{
         margin-bottom: 40px;
+    }
+
+    .to-note{
+        position: absolute;
+        width: 920px;
+        height: 60px;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        border: transparent;
     }
 
     .title{

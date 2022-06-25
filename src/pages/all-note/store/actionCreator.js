@@ -1,17 +1,18 @@
 import * as actionType from './actionType';
 import { db } from '@/utils/cloudBase';
 
-export const changeNotesAction = res => ({
-    type: actionType.CHANGE_NOTES,
+// 获取笔记
+export const getNotes = res => ({
+    type: actionType.GET_NOTES,
     notes: res.data
 })
 
 export const getNotesAction = () => {
     return dispatch => {
-        db.collection('articles')
+        db.collection('notes')
             .get()
             .then(res => {
-                dispatch(changeNotesAction(res))
+                dispatch(getNotes(res))
             })
     }
 }
