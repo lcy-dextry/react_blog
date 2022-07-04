@@ -6,6 +6,7 @@ import { reducer as cssReducer } from '@/pages/css-note/store/reducer';
 import { reducer as esReducer } from '@/pages/es6-note/store/reducer';
 import { reducer as htmlReducer } from '@/pages/html-note/store/reducer';
 import { reducer as reactReducer } from '@/pages/react-note/store/reducer';
+import { reducer as diaryReducer } from '@/pages/message/store/reducer';
 
 const reducer = combineReducers({
     gallery: galleryReducer,
@@ -13,7 +14,8 @@ const reducer = combineReducers({
     css: cssReducer,
     es: esReducer,
     html: htmlReducer,
-    react: reactReducer
+    react: reactReducer,
+    diary:diaryReducer
 })
 
 export default reducer;

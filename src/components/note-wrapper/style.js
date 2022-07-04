@@ -17,7 +17,7 @@ export const NoteWrapper = styled.div`
 
     &:hover{
         background-color: #1DA57A;
-        transform: scale(1.05, 1.05);
+        transform: scale(1.02, 1.02);
     }
 
     &:first-child{

@@ -83,3 +83,6 @@ export const contact = [
     {title: '邮箱', link: 'l18711130734@163.com'},
     {title: 'Github', link: 'https://github.com/lcy-dextry'}
 ]
+
+// 后台管理url
+export const adminUrl = 'https://my-blog-admin-1govrora045b6a0a-1312377968.ap-shanghai.app.tcloudbase.com/admin/home';

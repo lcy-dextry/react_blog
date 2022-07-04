@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 import { HomeOutlined, SettingFilled } from '@ant-design/icons';
 
 // 自定义
-import { headerLinks } from '@/common/local-data';
+import { headerLinks, adminUrl } from '@/common/local-data';
 import dropdown from '@/utils/dropdown';
 
 const AppHeader = memo(() => {
@@ -33,7 +33,7 @@ const AppHeader = memo(() => {
           }
         </ul>
 
-        <a href="todo" className='setting'>
+        <a href={adminUrl} className='setting'>
           <SettingFilled style={{ color: '#fff', fontSize: '26px' }} />
         </a>
       </div>
