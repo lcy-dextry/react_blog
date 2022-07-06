@@ -32,8 +32,17 @@ export const AppHeaderWrapper = styled.div`
             transition: 0.3s;
     
             &:hover{
-            background-color: rgba(60, 240, 160, 0.6);
-        }
+                background-color: rgba(60, 240, 160, 0.6);
+            }
+
+            &:first-child{
+                display: block;
+                position: relative;
+
+                &:hover+div{
+                    display: block;
+                }
+            }
         }
     }
 

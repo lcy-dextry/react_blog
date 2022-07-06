@@ -7,6 +7,8 @@ import { reducer as esReducer } from '@/pages/es6-note/store/reducer';
 import { reducer as htmlReducer } from '@/pages/html-note/store/reducer';
 import { reducer as reactReducer } from '@/pages/react-note/store/reducer';
 import { reducer as diaryReducer } from '@/pages/message/store/reducer';
+import { reducer as codeReducer } from '@/pages/code-note/store/reducer';
+import { reducer as interviewReducer } from '@/pages/interview-note/store/reducer';
 
 const reducer = combineReducers({
     gallery: galleryReducer,
@@ -15,7 +17,9 @@ const reducer = combineReducers({
     es: esReducer,
     html: htmlReducer,
     react: reactReducer,
-    diary:diaryReducer
+    diary: diaryReducer,
+    code: codeReducer,
+    interview: interviewReducer,
 })
 
 export default reducer;

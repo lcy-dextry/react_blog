@@ -1,36 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const HomeWrapper = styled.div`
-    .content{
-        display: flex;
-    }
-`
-
-export const HomeCoverWrapper = styled.div`
-    position: relative;
-    height: calc(100vh);
-
-    span{
-        width: 500px;
-        position: absolute;
-        top: calc(35vh);
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 56px;
-        font-weight: 600;
-        text-shadow: 2px 2px 6px var(--footerBg,rgba(0,0,0,.3));
-        color: #FFF;
-    }
-`
-
-export const HomeContentLeftWrapper = styled.div`
-    /* display: flex; */
-    .note-list{
-        div{
-            margin-bottom: 20px;
-        }
-    }
-
+export const PageChangerWrapper = styled.div`
     .page-changer{
         display: flex;
         justify-content: center;
@@ -78,13 +48,4 @@ export const HomeContentLeftWrapper = styled.div`
             }
         }
     }
-`
-
-export const HomeContentRightWrapper = styled.div`
-    display: flex;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    margin-left: 20px;
-    width: 300px;
-    
 `

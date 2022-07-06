@@ -24,7 +24,7 @@ export const AppFooterWrapper = styled.div`
 
     .utils{
         display: flex;
-        width: 183px;
+        width: 400px;
         margin: 10px auto;
 
         button{

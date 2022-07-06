@@ -29,7 +29,7 @@ export const NoteDetailWrapper = styled.div`
         }
 
         img{
-            width: 550px;
+            width: 800px;
         }
     }
 

@@ -13,6 +13,8 @@ import HTMLNote from '@/pages/html-note';
 import CSSNote from '@/pages/css-note';
 import ES6Note from '@/pages/es6-note';
 import ReactNote from '@/pages/react-note';
+import CodeNote from '@/pages/code-note';
+import InterviewNote from '@/pages/interview-note';
 import AllNote from '@/pages/all-note';
 
 import AllPicture from '@/pages/pics/c-pages/all-picture';
@@ -34,7 +36,9 @@ export default function RoutesMap() {
                 { path: 'html', element: <HTMLNote /> },
                 { path: 'css', element: <CSSNote /> },
                 { path: 'es6', element: <ES6Note /> },
-                { path: 'react', element: <ReactNote /> }
+                { path: 'react', element: <ReactNote /> },
+                { path: 'code', element: <CodeNote /> },
+                { path: 'interview', element: <InterviewNote /> },
             ]
         },
         {

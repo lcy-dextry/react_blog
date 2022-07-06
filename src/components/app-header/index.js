@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import React, { Fragment, memo } from 'react'
 import { AppHeaderWrapper } from './style';
 import { NavLink } from 'react-router-dom';
 
@@ -7,12 +7,19 @@ import { HomeOutlined, SettingFilled } from '@ant-design/icons';
 
 // 自定义
 import { headerLinks, adminUrl } from '@/common/local-data';
-import dropdown from '@/utils/dropdown';
+import Dropdown from './dropdown';
 
 const AppHeader = memo(() => {
   const linkType = (item, index) => {
     if (index === 0) {
-      return dropdown(item)
+      return (
+        <Fragment key={item.title}>
+          <NavLink to={item.link}>
+            {item.title}
+          </NavLink>
+          <Dropdown />
+        </Fragment>
+      )
     } else {
       return <NavLink key={item.title} to={item.link}>{item.title}</NavLink>
     }

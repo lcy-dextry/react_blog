@@ -5,25 +5,25 @@ import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 import Title from 'c/title';
 import Content from 'c/content';
 import PageChange from 'c/page-changer';
-import { getCSSNotesAction } from './store/actionCreator';
+import { getCodeNotesAction } from './store/actionCreator';
 
-const CSSNote = memo(() => {
+const CodeNote = memo(() => {
   const dispatch = useDispatch();
-  const { cssdata } = useSelector(
+  const { codedata } = useSelector(
     state => ({
-      cssdata: state.getIn(['css', 'css'])
+      codedata: state.getIn(['code', 'code'])
     }), shallowEqual)
 
   useEffect(() => {
-    dispatch(getCSSNotesAction())
+    dispatch(getCodeNotesAction())
   }, [dispatch]);
 
   return (
     <div>
-      <Title title='CSS 笔 记' />
-      <Content Component={<PageChange data={cssdata} />} />
+      <Title title='力 扣 笔 记' />
+      <Content Component={<PageChange data={codedata} />} />
     </div>
   )
 })
 
-export default CSSNote
+export default CodeNote
