@@ -5,7 +5,7 @@ export const DiaryCardWrapper = styled.div`
     margin-top: 20px;
     width: 200px;
     padding: 20px;
-    height: 150px;
+    /* height: 150px; */
     border-radius: 6px;
     background-color: rgba(0, 255, 128, 0.4);
     transition: all 0.3s;

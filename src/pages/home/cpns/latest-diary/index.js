@@ -14,8 +14,8 @@ const LatestDiary = memo((props) => {
       <div className='line'></div>
       <ul className='list'>
         {
-          diary.map((item, index) => {
-            return <DiaryCard key={diary._id} item={item} />
+          diary.map((item) => {
+            return <DiaryCard key={item._id} item={item} />
           })
         }
       </ul>
