@@ -16,6 +16,7 @@ import { getNotesAction } from '@/pages/all-note/store/actionCreator';
 import { getMsgAction } from '@/pages/message/store/actionCreator';
 import { changePicTypeAction } from '@/pages/pics/store/actionCreator';
 import { gallery } from '../pics/store/state';
+import CanvasTitle from './cpns/canvas';
 
 const Home = memo(() => {
   const dispatch = useDispatch();
@@ -37,6 +38,7 @@ const Home = memo(() => {
   const pageList = (data, start) => {
     return [...data].slice(start, start + 5)
   }
+  
   const showList = (data, start) => (
     <>
       <ul className='note-list'>
@@ -61,7 +63,7 @@ const Home = memo(() => {
   return (
     <HomeWrapper>
       <HomeCoverWrapper className='wrap-v2'>
-        <span>Grace 的 工 具 箱 {`:)`}</span>
+        <CanvasTitle/>
       </HomeCoverWrapper>
       <div className='wrap-v1 content'>
         <HomeContentLeftWrapper>
